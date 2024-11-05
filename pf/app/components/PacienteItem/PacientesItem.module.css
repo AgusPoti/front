@@ -1,0 +1,25 @@
+.pacienteItem {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 2fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pacienteItem span {
+    text-align: center;
+  }
+  
+  .pacienteItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .pacienteItem .nombre {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  

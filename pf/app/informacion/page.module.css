@@ -1,0 +1,57 @@
+/* Estilos generales */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+/* Botón general */
+.boton {
+  padding: 10px 20px;
+  background-color: #A01111;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  max-width: 300px; /* Define un ancho máximo en pantallas grandes */
+}
+
+.boton:hover {
+  background-color: #800d0d;
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .boton {
+    font-size: 0.9rem; /* Reduce el tamaño de fuente */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}
+
+.cancelButton {
+  background-color: #d9534f; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.cancelButton:hover {
+  background-color: #c9302c; 
+}

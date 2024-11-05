@@ -1,0 +1,48 @@
+/* Timer.module.css */
+.timerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0; 
+}
+
+.countdownWrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%); 
+  font-size: 48px;
+  font-weight: bold;
+  color: #b71c1c;
+}
+
+.minutesText {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #666;
+}
+
+.pacientesInfo {
+  margin-top: 10px; 
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+  color: red;
+}

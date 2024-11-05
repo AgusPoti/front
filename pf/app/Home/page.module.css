@@ -1,0 +1,110 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinea el contenido al principio */
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    background-color: #A01111; /* Fondo rojo */
+  }
+  
+  .logoContainer img {
+    width: 600px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-bottom: 50px; /* Espacio pequeño debajo del logo */
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espacio entre botones */
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .linkButton,
+  .secondaryButton {
+    text-decoration: none;
+    background-color: white; /* Color blanco para los botones */
+    color: #800b0b; /* Un tono más oscuro de rojo para el texto de los botones */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    border: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .linkButton:hover,
+  .secondaryButton:hover {
+    background-color: #F5F5F5; /* Un tono más claro de fondo para el hover */
+  }
+  
+  .nextTurnContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #800b0b;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .mapContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra el contenido verticalmente */
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 20px;
+    margin-top: 50px; /* Agrega un margen superior para empujar el mapa hacia abajo */
+    background-color: #A01111; /* Opcional: color de fondo si se desea */
+  }
+  
+  .mapContainer img {
+    max-width: 90%; /* Ajusta el tamaño máximo del mapa */
+    height: auto; /* Mantiene la proporción del mapa */
+    max-height: 70vh; /* Ajusta la altura máxima del mapa */
+    border-radius: 15px; /* Bordes redondeados para el mapa */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave para mejorar el estilo */
+  }
+  
+  .mapBackButton {
+    align-self: flex-start; /* Alinea el botón al principio del contenedor */
+    background-color: white; /* Color blanco para el botón */
+    color: #800b0b; /* Color del texto */
+    padding: 8px 16px; /* Reduce el tamaño del botón en computadoras */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio debajo del botón */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Ajusta el tamaño de fuente del botón */
+  }
+  
+  .mapBackButton:hover {
+    background-color: #F5F5F5; /* Un tono más claro de fondo para el hover */
+  }
+  
+  /* Media queries para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .mapContainer {
+      margin-top: 70px; /* Empuja el mapa un poco más hacia abajo en pantallas más pequeñas */
+    }
+  
+    .mapBackButton {
+      padding: 10px 20px; /* Ajusta el tamaño del botón en pantallas más pequeñas */
+      font-size: 16px; /* Ajusta el tamaño de fuente del botón en pantallas más pequeñas */
+    }
+  }
+  

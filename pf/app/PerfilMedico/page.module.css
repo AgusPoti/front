@@ -1,0 +1,56 @@
+.container {
+  padding: 20px;
+}
+
+
+
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.index {
+  flex: 0 0 30px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+.name {
+  flex: 1;
+}
+
+.area {
+  flex: 1;
+  text-align: center;
+  color: #aaa;
+}
+
+.medico {
+  flex: 1;
+  text-align: center;
+  color: #aaa;
+}
+
+.time {
+  flex: 0 0 80px;
+  text-align: center;
+  color: #aaa;
+}

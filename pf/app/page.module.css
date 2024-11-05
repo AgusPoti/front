@@ -1,0 +1,84 @@
+/* page.module.css */
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}
+
+.app > div {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.app h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.app p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.app input[type="text"],
+.app input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.app input[type="text"]:focus,
+.app input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.app a {
+  display: block;
+  margin-top: 16px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.app a:hover {
+  text-decoration: underline;
+}

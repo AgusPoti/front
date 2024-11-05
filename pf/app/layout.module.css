@@ -1,0 +1,81 @@
+/* Barra de navegación */
+.nav {
+  background: linear-gradient(90deg, #a01111, #dd3131); /* Fondo degradado */
+  padding: 20px 20px; /* Espaciado interno */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #900b0b; /* Línea inferior más delgada */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra más sutil */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  overflow: hidden;
+  transition: background-color 0.3s ease; /* Transición para el fondo */
+}
+
+/* Contenedor de enlaces de navegación */
+.nav-links {
+  display: flex;
+  gap: 25px; /* Espaciado entre enlaces */
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+/* Enlaces de navegación */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 600; /* Ligera reducción en el grosor de la fuente */
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 8px; /* Bordes más redondeados */
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+/* Efectos de hover y focus en los enlaces */
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffebee; /* Color de texto más claro */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente en hover */
+  transform: translateY(-3px); /* Efecto de levitación mayor */
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); /* Sombra más definida */
+  border-bottom: none; /* Elimina la línea inferior en el hover */
+}
+
+/* Estado activo de los enlaces (opcional) */
+.nav-link.active {
+  color: #ffebee;
+  background-color: rgba(255, 255, 255, 0.15); /* Fondo más visible */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav {
+    padding: 15px; /* Menos espaciado en pantallas pequeñas */
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-link {
+    font-size: 15px; /* Fuente más pequeña */
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 10px; /* Espaciado interno reducido */
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

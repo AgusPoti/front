@@ -1,0 +1,140 @@
+/* Estilos generales para el formulario */
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estilos para el formulario y sus campos */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="email"],
+.formGroup input[type="password"],
+.formGroup input[type="checkbox"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* Estilos para el placeholder */
+.formGroup input::placeholder {
+  color: #aaa;
+}
+
+/* Estilo para el checkbox */
+.formGroup label input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+/* Estilo del botón primario */
+.btnPrimary {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #b71c1c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.btnPrimary:hover {
+  background-color: #a01515;
+}
+
+.btnPrimary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Estilo para mensajes de error */
+.error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilo para el botón secundario */
+.switchToLogin {
+  margin-top: 15px;
+}
+
+.switchToLogin p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.btnSecondary {
+  background: none;
+  border: none;
+  color: #b71c1c;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btnSecondary:hover {
+  color: #a01515;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  .container {
+      max-width: 600px; /* Ancho más grande para pantallas de escritorio */
+      padding: 30px;
+  }
+
+  .formGroup input[type="text"],
+  .formGroup input[type="email"],
+  .formGroup input[type="password"],
+  .formGroup input[type="checkbox"] {
+      font-size: 18px;
+      padding: 14px;
+  }
+
+  .btnPrimary {
+      font-size: 18px;
+      padding: 14px;
+  }
+
+  .btnSecondary {
+      font-size: 16px;
+  }
+}

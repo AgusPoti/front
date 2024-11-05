@@ -1,0 +1,22 @@
+/* input.module.css */
+
+.inputContainer {
+  margin: 10px 0; /* Espacio arriba y abajo del input */
+}
+
+.inputField {
+  width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
+  padding: 10px; /* Espacio interno para el texto */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #333; /* Color del texto */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave en el borde y sombra */
+}
+
+.inputField:focus {
+  border-color: #007bff; /* Color del borde cuando el input está enfocado */
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Sombra más prominente cuando está enfocado */
+  outline: none; /* Quitar el contorno por defecto */
+}
